@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title> Minha Família </title>
+</head>
+
+<body>
+    <center>
+        <h1> Albúm da Família </h1>
+        <h2> Minha Família </h2>
+        <img id="hehe"
+            src="R.png">
+        <br>
+        <h3 id="people"> Todos juntos! </h3>
+        <br>
+        <button onclick="next()"> Próximo </button>
+    </center>
+    <script>
+        var Escolhe_chinelada_cintada_ou_rasengan = ["Minha Família", "Meu nome é Matheus", "Minha mãe, Giseli", "Meu pai, Paulo", "E minha irmã, Manuela"]
+        var toda_img = ["R.png", "OIP (2).png", "OIP (3).png", "OIP (1).png", "OIP.png"]
+        var i = 1
+        function next() {
+            document.getElementById("people").innerHTML = Escolhe_chinelada_cintada_ou_rasengan[i]
+            document.getElementById("hehe").src= toda_img[i]
+            i++
+            if (i == 5) { i = 0 }
+        }
+    </script>
+
+</body>
+
+</html>
